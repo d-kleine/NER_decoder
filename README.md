@@ -1,4 +1,4 @@
-# Named Entity Recognition (NER) with autoregressive LLMs
+# Named Entity Recognition (NER) with Llama 3.2
 
 ## Overview
 
