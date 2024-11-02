@@ -16,7 +16,7 @@ This makes LLaMA a (potentially) superior choice when both text generation and u
 
 ## Features
 
-- **Model**: LLaMA 3.2 (1TB) - a decoder-only transformer-based large language model (LLM).
+- **Model**: LLaMA 3.2 (1B) - a decoder-only transformer-based large language model (LLM).
 - **Attention Mechanism**: Causal masking is disabled to allow bidirectional attention, suitable for NER tasks.
 - **Optimization**:
   - **LoRA**: Low-Rank Adaptation is used to efficiently fine-tune the model with fewer trainable parameters.
