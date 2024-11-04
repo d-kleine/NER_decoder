@@ -170,3 +170,4 @@ eng.testb
 # artefacts
 tmp_trainer/
 results/
+bidirectional_llama32
