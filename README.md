@@ -26,3 +26,18 @@ This makes LLaMA a (potentially) superior choice when both text generation and u
 ## Dataset
 
 * https://www.kaggle.com/datasets/juliangarratt/conll2003-dataset
+
+## NER Tagging Structure
+
+The **NER (Named Entity Recognition) tags** you provided follow the **BIO tagging scheme**, which is commonly used in NER tasks to label entities in text. Here's a breakdown of what each tag means:
+
+### **Tag Structure**
+- **B-**: Indicates the beginning of a named entity.
+- **I-**: Indicates that the token is inside a named entity but not at the beginning.
+- **O**: Represents tokens that are not part of any named entity.
+
+### **Entity Types**
+- **PER**: Person (e.g., names of individuals)
+- **ORG**: Organization (e.g., companies, institutions)
+- **LOC**: Location (e.g., cities, countries, geographical regions)
+- **MISC**: Miscellaneous entities that don't fall into the other categories (e.g., events, nationalities)
