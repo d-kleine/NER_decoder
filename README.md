@@ -29,7 +29,7 @@ This makes LLaMA a (potentially) superior choice when both text generation and u
 
 ## NER Tagging Structure
 
-The **NER (Named Entity Recognition) tags** you provided follow the **BIO tagging scheme**, which is commonly used in NER tasks to label entities in text. Here's a breakdown of what each tag means:
+The **NER (Named Entity Recognition) tags** used in this project follow the **BIO tagging scheme**, which is commonly used in NER tasks to label entities in text. Here's a breakdown of what each tag means:
 
 ### **Tag Structure**
 - **B-**: Indicates the beginning of a named entity.
