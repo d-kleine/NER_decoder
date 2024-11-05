@@ -41,3 +41,54 @@ The **NER (Named Entity Recognition) tags** used in this project follow the **BI
 - **ORG**: Organization (e.g., companies, institutions)
 - **LOC**: Location (e.g., cities, countries, geographical regions)
 - **MISC**: Miscellaneous entities that don't fall into the other categories (e.g., events, nationalities)
+
+## Setup Instruction
+
+1. **Ensure Python 3.11 is Installed**
+   - Verify that Python 3.11 is installed on your system by running:
+     ```bash
+     python3.11 --version
+     ```
+   - If Python 3.11 is not installed, you will need to install it first. This can typically be done through a package manager or by downloading from the official Python website.
+
+2. **Navigate to Your Project Directory**
+   - Open your terminal and change to the directory where you want to set up your project:
+     ```bash
+     cd /path/to/your/project
+     ```
+
+3. **Create a Virtual Environment**
+   - Use the `venv` module to create a virtual environment:
+     ```bash
+     python3.11 -m venv .venv
+     ```
+   - This command creates a new directory named `.venv` in your project folder, which contains the virtual environment.
+
+4. **Activate the Virtual Environment**
+   - Activate the virtual environment to start using it:
+     - On macOS and Linux:
+       ```bash
+       source .venv/bin/activate
+       ```
+     - On Windows:
+       ```bash
+       .venv\Scripts\activate
+       ```
+
+5. **Upgrade pip**
+   - Before installing packages, ensure you have the latest version of `pip`:
+     ```bash
+     pip install --upgrade pip
+     ```
+
+6. **Install Packages from requirements.txt**
+   - Use `pip` to install all required packages listed in your `requirements.txt` file:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+7. **Deactivate the Virtual Environment (Optional)**
+   - Once you are done working in the virtual environment, you can deactivate it by simply running:
+     ```bash
+     deactivate
+     ```
