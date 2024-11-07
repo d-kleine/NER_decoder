@@ -5,3 +5,5 @@ jupyter
 ipywidgets
 accelerate>=0.26.0
 evaluate
+peft
+seqeval
