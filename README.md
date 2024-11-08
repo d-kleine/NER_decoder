@@ -5,7 +5,7 @@
 This repository contains a **Named Entity Recognition (NER)** implementation using a **LLaMA 3.2** model using *HuggingFace*, specifically leveraging its autoregressive (decoder-only) architecture. The project demonstrates how to adapt a LLaMA model for NER tasks by disabling causal masking, enabling bidirectional attention, and applying **Low-Rank Adaptation (LoRA)** for fine-tuning. 
 
 > [!IMPORTANT]
-> This is a **showcase** project and thus not fully optimized or thoroughly tested.
+> This is a showcase project and thus not fully optimized or thoroughly tested. The finetuned model in its current state overfits, meaning it performs well on the training set but struggles to generalize to new, unseen data. This overfitting likely results from the model's complexity relative to the dataset size or insufficient regularization during fine-tuning. Further steps such as hyperparameter tuning, and more robust regularization techniques would be necessary to improve generalization. Additionally, the model's bidirectional attention mechanism, enabled by disabling causal masking, may require further refinement to balance its performance across both training and evaluation datasets.
 
 ## Purpose
 Traditionally, encoder-only models like BERT have dominated NER tasks due to their ability to process input text bidirectionally, capturing rich contextual information. However, by removing the causal mask in LLaMA, we enable it to leverage bidirectional context while maintaining its strengths in generative tasks, making it a versatile solution for NER. Compared to encoder-only models like BERT, LLaMA offers several advantages:
