@@ -1,8 +1,8 @@
-# Named Entity Recognition (NER) with Llama 3.2
+# Named Entity Recognition (NER) with LLaMA 3.2
 
 ## Overview
 
-This repository contains a **Named Entity Recognition (NER)** implementation using a **LLaMA 3.2** model using *HuggingFace*, specifically leveraging its autoregressive (decoder-only) architecture. The project demonstrates how to adapt a LLaMA model for NER tasks by disabling causal masking, enabling bidirectional attention, and applying **Low-Rank Adaptation (LoRA)** for fine-tuning. 
+This repository contains a **Named Entity Recognition (NER)** implementation using the **LLaMA 3.2 1B** model using *HuggingFace*, specifically leveraging its autoregressive (decoder-only) architecture. The project demonstrates how to adapt a LLaMA model for NER tasks by disabling causal masking, enabling bidirectional attention, and applying **Low-Rank Adaptation (LoRA)** for fine-tuning. 
 
 > [!IMPORTANT]
 > This is a showcase project and thus not fully optimized or thoroughly tested. The finetuned model in its current state overfits, meaning it performs well on the training set but struggles to generalize to new, unseen data. This overfitting likely results from the model's complexity relative to the dataset size or insufficient regularization during fine-tuning. Further steps such as hyperparameter tuning, and more robust regularization techniques would be necessary to improve generalization. Additionally, the model's bidirectional attention mechanism, enabled by disabling causal masking, may require further refinement to balance its performance across both training and evaluation datasets.
@@ -16,7 +16,7 @@ This makes LLaMA a (potentially) superior choice when both text generation and u
 
 ## Features
 
-- **Model**: LLaMA 3.2 (1B) - a decoder-only transformer-based large language model (LLM).
+- **Model**: LLaMA 3.2, a decoder-only transformer-based large language model (LLM). The 1B variant provides enough capacity to handle complex tasks like NER while remaining computationally feasible for experimentation.
 - **Attention Mechanism**: Causal masking is disabled to allow bidirectional attention, suitable for NER tasks.
 - **Optimization**:
   - **LoRA**: Low-Rank Adaptation is used to efficiently fine-tune the model with fewer trainable parameters.
