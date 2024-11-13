@@ -1,4 +1,4 @@
-# Named Entity Recognition (NER) with LLaMA 3.2
+# Named Entity Recognition with LLaMA 3.2
 
 ## Overview
 
